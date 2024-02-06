@@ -1,0 +1,126 @@
+/* ========== CUSTOM CAROUSEL CSS for Courses page ========== */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.courses_testimonials_right .owl-nav {
+  display: none;
+}
+
+.courses_testimonials_wrapper {
+  width: 100%;
+}
+
+.courses_testimonials_left {
+  width: 45%;
+}
+
+.courses_testimonials_right {
+  width: 34%;
+}
+
+.courses_carousel_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.courseTestimonialVideoCard {
+  width: 45vw;
+  height: 290px;
+  position: relative;
+  display: flex;
+}
+
+.courseTestimonialTextCard {
+  height: 24.4vh;
+  width: 34vw;
+  position: relative;
+  display: flex;
+}
+
+.courses_card_video_thumbnail {
+  width: 100%;
+}
+
+.courses_card_video_thumbnail iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.card_info {
+  color: #0000006e;
+}
+
+.card_info strong {
+  font-weight: 600;
+  color: #000000;
+}
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+@media (min-width: 992px) {
+  .courseTestimonialVideoCard {
+    height: 326px;
+  }
+
+  .courses_card_video_thumbnail.card_image_courses {
+    width: 60vw;
+    /* aspect-ratio: 16/9; */
+  }
+
+  .courses_card_video{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 
+
+  MOBILES AND TABLETS
+  
+*/
+
+@media (max-width: 991px) {
+  .courses_testimonials_wrapper {
+    width: 90vw;
+  }
+
+  .courses_testimonials_right,
+  .courses_testimonials_left {
+    width: 100%;
+  }
+
+  .courses_carousel_wrapper {
+    height: fit-content;
+  }
+
+  .courseTestimonialVideoCard,
+  .courseTestimonialTextCard {
+    width: 90vw;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .courseTestimonialTextCard {
+    width: 90vw;
+    height: 125px;
+    position: relative;
+    display: flex;
+  }
+
+  .courses_card_video_thumbnail {
+    width: 100%;
+    height: 65vw;
+  }
+
+  .courses_card_video_thumbnail.card_image_courses {
+    width: 90vw;
+  }
+}

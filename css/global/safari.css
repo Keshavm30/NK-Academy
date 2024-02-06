@@ -1,0 +1,17 @@
+@media (max-width: 991px) {
+  .sanskritToolkit_img {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 410px) {
+  .about {
+    height: 65rem;
+  }
+
+  .preFooter_line1{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,44 @@
+/* SECTION: BRANCH LOCATOR */
+
+.course_branch_card {
+  transition: box-shadow 0.5s ease;
+}
+
+.course_branch_card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  cursor: pointer;
+}
+
+.course_branch_card > h3 {
+  font-size: 1.6rem;
+}
+
+.course_branch_card > p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.card_address_link > img {
+  width: 1.5rem;
+  margin-left: -5px;
+}
+
+.course_branch_card{
+  background-color: rgb(247, 247, 247);
+}
+
+@media (min-width: 992px) {
+  .course_branch_card{
+    width: 16rem;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 991px) {
+  .course_branch_card {
+    width: 90vw;
+    height: fit-content;
+    transition: none;
+  }
+}

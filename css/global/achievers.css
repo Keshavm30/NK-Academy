@@ -1,0 +1,156 @@
+.achievers_wrapper {
+  background-color: gold;
+}
+
+.student_name {
+  background-color: red;
+  width: fit-content;
+  color: white;
+  margin-top: 0.7rem;
+}
+
+.student_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  .achievers_wrapper {
+    padding: 1rem;
+  }
+  .achievers {
+    margin: 10vh 0;
+  }
+
+  .students_wrapper {
+    gap: 1.5rem;
+  }
+
+  .student {
+    width: 13rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .student {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    border-radius: 2% 2%;
+  }
+  .student_image_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .student_image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 0, 0, 0.7);
+  }
+  .student_name,
+  .student p {
+    text-align: center;
+  }
+  .student_name {
+    font-size: 1.2rem;
+  }
+  .student .score {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+  }
+  .student_info > .student_section {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .student_info > .blink_text {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
+
+/* 
+  MOBILES AND TABLETS
+*/
+
+@media (max-width: 991px) {
+  .achievers {
+    margin: 2rem 0;
+  }
+
+  .achievers_wrapper {
+    padding: 1rem;
+  }
+
+  .students_wrapper {
+    gap: 1rem;
+  }
+
+  .student {
+    background-color: #fff;
+    width: 43vw;
+    padding: 1rem;
+  }
+
+  .student {
+    display: flex;
+    flex-direction: column;
+    /* width: 40vw; */
+    /* border: 2px solid red; */
+    padding: 1rem 0.2rem;
+    border-radius: 2% 2%;
+  }
+  .student_image_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .student_image {
+    margin: auto;
+    width: 22vw;
+    height: 22vw;
+    border-radius: 999px;
+    border: 2px solid #e3000d;
+  }
+
+  .student_info {
+    padding: 5px 0;
+  }
+
+  .student_name,
+  .student p {
+    text-align: center;
+    margin: 5px 0;
+  }
+  .student .score {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .student_name {
+    font-size: 1.2rem;
+  }
+
+  .student_info > .student_section {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .student_info > .blink_text {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}

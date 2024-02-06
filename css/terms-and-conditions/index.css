@@ -1,0 +1,42 @@
+.preFooter_contacts{
+  margin-top: 5rem;
+}
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  main {
+    margin-top: 7rem;
+  }
+
+  .tNc-sutbtitles {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+}
+
+/* 
+  MOBILES AND TABLETS
+*/
+
+@media (max-width: 991px) {
+  main {
+    margin-top: 10vh;
+  }
+
+
+  .tNc-sutbtitles {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+  }
+
+  .elementor-widget-container{
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}

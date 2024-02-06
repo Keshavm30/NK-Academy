@@ -1,0 +1,204 @@
+/* =============== GENERAL COURSE PAGE CSS ==================== */
+.courses_title_container {
+  height: 65vh;
+}
+
+.courses_title_container::after {
+  height: 65vh;
+}
+
+.branch_card {
+  width: 18vw;
+  transition: box-shadow 0.5s ease;
+}
+
+.branch_card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  cursor: pointer;
+}
+
+.branch_card > h3 {
+  font-size: 1.6rem;
+}
+
+.branch_card > p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.card_address_link > img {
+  width: 1.5rem;
+  margin-left: -5px;
+}
+
+.course_feature {
+  width: 13rem;
+  display: flex;
+  border: 1px solid black;
+  padding: 0.2rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.course_feature > .img_one {
+  width: 2.5rem;
+}
+
+.course_feature > img {
+  width: 2rem;
+  height: fit-content;
+}
+
+.course_feature > span {
+  width: 50%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .course_feature {
+    height: 4rem;
+    padding: 1rem;
+  }
+
+  .course_feature > span {
+    width: 80%;
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 991px) {
+  .carousel_wrapper.carousel_wrapper_one {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .card_image.card_image_one {
+    width: 90vw;
+  }
+
+  .branch_card {
+    width: 90vw;
+    transition: none;
+  }
+
+  .course_feature {
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  .course_feature > span {
+    width: 80%;
+  }
+
+  .titleWithUnderline-wrapper {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* ============================================================ */
+
+.student p {
+  margin-bottom: 0.2rem;
+}
+
+main {
+  display: flex;
+}
+
+.course-aside-content {
+  background-color: #f2f2f2;
+}
+
+.submit_btn {
+  background-color: #13136d;
+  color: white;
+  padding: 0.6rem 1.3rem;
+}
+
+.submit_btn:hover {
+  background-color: #13136d;
+  color: white;
+  opacity: 0.6;
+}
+
+.prospectus_download_btn > img {
+  width: 70px;
+  height: 70px;
+}
+
+.prospectus_download_btn > p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.prospectus_download_btn:hover {
+  opacity: 0.5;
+}
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  .course-main-content {
+    width: 60%;
+  }
+
+  .course-aside-content {
+    width: 29%;
+  }
+
+  .course-aside-content > form {
+    width: 100%;
+    top: 4rem !important;
+  }
+
+  .course-aside-content > form > h3  {
+    font-size: 1.5rem;
+  }
+
+  .titleWithUnderline-wrapper {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* =============================== */
+  .student {
+    width: 11rem !important;
+  }
+  .student_image {
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .student_name {
+    font-size: 1.2rem !important;
+  }
+  .student .score {
+    font-size: 1.3rem !important;
+  }
+  .student_info > .blink_text {
+    font-size: 1rem !important;
+  }
+}
+
+/* 
+  MOBILES AND TABLETS
+*/
+
+@media (max-width: 991px) {
+  /* .owl-nav {
+    display: none;
+  } */
+  .titleWithUnderline-wrapper {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,317 @@
+/* ===== INTERNAL CSS ==== */
+
+/* ======================= */
+/* ======================= */
+/* ======================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* popup */
+
+.popup5,
+.popup4,
+.popup3,
+.popup2,
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 85%;
+  max-width: 1600px;
+  height: 90vh;
+  /* max-height: 800px; */
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  overflow: hidden;
+  transition: 1s;
+  opacity: 0;
+}
+
+.popup5.active,
+.popup4.active,
+.popup3.active,
+.popup2.active,
+.popup.active {
+  transform: translate(-50%, -45%) scale(1);
+  opacity: 1;
+}
+
+.popup5.active .close-btn5,
+.popup5.active .image-name5,
+.popup5.active .index5,
+.popup5.active .large-image5,
+.popup5.active .arrow-btn5,
+.popup4.active .close-btn4,
+.popup4.active .image-name4,
+.popup4.active .index4,
+.popup4.active .large-image4,
+.popup4.active .arrow-btn4,
+.popup3.active .close-btn3,
+.popup3.active .image-name3,
+.popup3.active .index3,
+.popup3.active .large-image3,
+.popup3.active .arrow-btn3,
+.popup2.active .close-btn2,
+.popup2.active .image-name2,
+.popup2.active .index2,
+.popup2.active .large-image2,
+.popup2.active .arrow-btn2,
+.popup.active .close-btn,
+.popup.active .image-name,
+.popup.active .index,
+.popup.active .large-image,
+.popup.active .arrow-btn {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 1s;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.image-name5,
+.image-name4,
+.image-name3,
+.image-name2,
+.image-name {
+  opacity: 0;
+}
+
+.close-btn5,
+.close-btn4,
+.close-btn3,
+.close-btn2,
+.close-btn {
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background: #f00; */
+  cursor: pointer;
+}
+
+.arrow-btn5,
+.arrow-btn4,
+.arrow-btn3,
+.arrow-btn2,
+.arrow-btn {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.left-arrow5,
+.left-arrow4,
+.left-arrow3,
+.left-arrow2,
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow5,
+.right-arrow4,
+.right-arrow3,
+.right-arrow2,
+.right-arrow {
+  right: 10px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.arrow-btn5:hover,
+.arrow-btn4:hover,
+.arrow-btn3:hover,
+.arrow-btn2:hover,
+.arrow-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.index5,
+.index4,
+.index3,
+.index2,
+.index {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 80px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+}
+
+.large-image5,
+.large-image4,
+.large-image3,
+.large-image2,
+.large-image {
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  opacity: 0;
+}
+
+/* ======================== */
+/* ======================== */
+/* ======================== */
+
+.galleryWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.galleryHeading {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.galleryHeading > h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  border-bottom: 3px solid red;
+  padding-bottom: 10px;
+}
+
+.galleryHeading > h3 > span {
+  font-weight: 100;
+}
+
+.galleryWrapper > .galleryColumnsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.galleryWrapper > .galleryColumnsWrapper > .imageColumnars {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+  gap: 1rem;
+}
+
+.galleryWrapper
+  > .galleryColumnsWrapper
+  > .imageColumnars
+  > .gallery-image
+  > img {
+  width: 100%;
+}
+
+.gallery-image > img {
+  transition: 1s;
+  object-position: center;
+}
+
+/* LAPTOPS AND DESKTOPS */
+@media (min-width: 992px) {
+  .popup5.active,
+  .popup4.active,
+  .popup3.active,
+  .popup2.active,
+  .popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 1022;
+  }
+  .galleryWrapper {
+    margin: 40px 20px 0 20px;
+  }
+  .galleryHeading {
+    padding-bottom: 0;
+  }
+}
+
+/* MOBILES AND TABLETS */
+@media (max-width: 991px) {
+  .popup5,
+  .popup4,
+  .popup3,
+  .popup2,
+  .popup {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+  }
+
+  .popup5.active,
+  .popup4.active,
+  .popup3.active,
+  .popup2.active,
+  .popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 1022;
+  }
+
+  .top-bar {
+    top: 3vh;
+  }
+
+  .index5,
+  .index4,
+  .index3,
+  .index2,
+  .index {
+    bottom: 20px;
+  }
+
+  /* =================================== */
+  /* =================================== */
+  /* =================================== */
+
+  /* .galleryWrapper>.galleryColumnsWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        } */
+
+  .galleryWrapper {
+    margin: 0;
+  }
+
+  .galleryHeading > h3 {
+    font-size: 2.5rem;
+  }
+
+  .galleryWrapper > .galleryColumnsWrapper > .imageColumnars {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    gap: 1.25vw;
+  }
+}

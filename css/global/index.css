@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* dont use, causes problems for events gallery */
+  /* pointer-events: none; */
+}
+
+nav{
+  z-index: 100;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #267dff;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.nav-link {
+  color: black;
+}
+
+.button-slanted {
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.button-slanted-content {
+  -ms-transform: skewX(20deg);
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
+  display: inline-block;
+}
+
+.blink_text {
+  animation: blink 4s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ========== SPACING =========== */
+
+
+/* ============================== */
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  .element_sm {
+    display: none;
+    position: static;
+  }
+
+}
+
+/* 
+
+  MOBILES AND TABLETS
+  
+*/
+
+@media (max-width: 991px) {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .element_lg {
+    display: none;
+    position: static;
+  }
+
+}

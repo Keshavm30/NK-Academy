@@ -1,0 +1,422 @@
+/* =================== CONTACT TITLE ======================== */
+
+.contact_title_container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../editable-media/backgrounds/contact-hero.jpeg);
+  background-attachment: fixed;
+
+  color: white;
+}
+
+.contact_title_container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact_hero_title,
+.contact_hero_underline {
+  z-index: 90;
+}
+
+.contact_hero_title {
+  text-transform: capitalize;
+}
+
+/* ========================== CONTACT BRANCH CARD ============================= */
+
+.contact_branch_card {
+  transition: box-shadow 0.5s ease;
+}
+
+.contact_branch_card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  cursor: pointer;
+}
+
+.contact_branch_card > h3 {
+  font-size: 1.6rem;
+}
+
+.contact_branch_card > p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.contact_card_addr_link > img {
+  width: 1.5rem;
+  margin-left: -5px;
+}
+
+/* ===============================  CONTACT POST-HERO BANNER ============================= */
+
+.contact_post_hero_banner {
+  margin: 3rem 0;
+}
+
+.hero_banner_col1,
+.hero_banner_col2 {
+  width: 45%;
+}
+
+.banner_col1_q2,
+.banner_col1_q3,
+.banner_col2_q1,
+.banner_col2_q4 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.quadrant_icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.course-details {
+  width: 100%;
+}
+
+.course-details-wrapper {
+  width: 90%;
+}
+
+.contact_preFooter_section {
+  width: 100%;
+}
+
+.submit_btn {
+  background-color: white;
+  color: #141474;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.submit_btn:hover {
+  background-color: white;
+  color: #141474;
+  opacity: 0.7;
+}
+
+.prospectus_download_btn > img {
+  width: 70px;
+  height: 70px;
+}
+
+.prospectus_download_btn > p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.prospectus_download_btn:hover {
+  opacity: 0.8;
+}
+
+.contact_preFooter_section {
+  background-image: url(../../editable-media/pre-footer/prefooter-bg2.png);
+  background-position: center 50%;
+  background-size: 90vw;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.contact_preFooter_section > .contact_form_wrapper {
+  height: 100%;
+}
+
+.preFooter_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0f367e;
+  opacity: 0.95;
+  z-index: 9;
+}
+
+.location_map_wrapper,
+.contact_form_wrapper {
+  z-index: 10;
+}
+
+/* LAPTOPS AND DESKTOPS */
+@media (min-width: 992px) {
+  .banner_col1_q2,
+  .banner_col1_q3,
+  .banner_col2_q1,
+  .banner_col2_q4 {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .info_col {
+    width: 25rem;
+  }
+
+  /* ======================= */
+
+  .contact_branch_card {
+    width: 18rem;
+    height: fit-content;
+    background-color: whitesmoke;
+  }
+
+  /* ======================= */
+
+  .branch_location_map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .preFooter_overlay {
+    height: 90vh;
+  }
+
+  .location_map_wrapper {
+    height: 70vh;
+  }
+
+  .location_map_wrapper,
+  .contact_form_wrapper {
+    width: 45%;
+  }
+
+  .contact_form_wrapper > h3 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+  }
+
+  .contact_form_wrapper > form {
+    width: 100%;
+  }
+
+  .contact_form_wrapper > form label {
+    font-size: 1.5rem;
+  }
+
+  #inputReason,
+  #inputContactNumber {
+    width: 46vw;
+  }
+  
+  .contact_title_container {
+    width: 100%;
+    height: 62vh;
+  }
+
+  .contact_title_container::after {
+    width: 100%;
+    height: 62vh;
+    top: 0;
+    left: 0;
+  }
+
+  .contact_title_container {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .contact_hero_title {
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+  }
+
+  .contact_hero_underline {
+    width: 15rem;
+    height: 0.3rem;
+  }
+
+  .contact_hero_underline {
+    background-color: #e70000;
+  }
+
+  /* ========================= */
+  main {
+    margin-top: 3rem;
+  }
+
+  /* ========================= */
+  .branch-details {
+    margin: 5rem 0 10rem 0;
+  }
+
+  .branch-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ========================= */
+  .contact_branch_card > p {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  /* ========================= */
+  .contact_section_title{
+    margin: 1.5rem 0;
+  }
+}
+
+/* MOBILES AND TABLETS */
+@media (max-width: 991px) {
+  .hero_banner_col1,
+  .hero_banner_col2 {
+    width: 90%;
+  }
+
+  .banner_col1_q2,
+  .banner_col1_q3,
+  .banner_col2_q1,
+  .banner_col2_q4 {
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  .info_col {
+    width: 60vw;
+  }
+
+  .contact_branch_card{
+    width: 90vw;
+    height: fit-content;
+  }
+
+  .branch_location_map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact_preFooter_section {
+    background-size: 240vw;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .preFooter_overlay {
+    height: calc(100% + 30vh);
+  }
+
+  .location_map_wrapper {
+    height: 30vh;
+  }
+
+  .location_map_wrapper {
+    width: 95%;
+  }
+  .contact_form_wrapper {
+    width: 90%;
+  }
+
+  .contact_form_wrapper > h3 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+  }
+
+  .contact_form_wrapper > form {
+    width: 100%;
+  }
+
+  .contact_form_wrapper > form label {
+    font-size: 1.5rem;
+  }
+
+  #inputReason,
+  #inputContactNumber {
+    width: 90vw;
+  }
+
+  /* ============================ */
+
+  .contact_title_container {
+    width: 100%;
+    height: 55vh;
+  }
+
+  .contact_title_container::after {
+    width: 100%;
+    height: 55vh;
+    top: 0;
+    left: 0;
+  }
+
+  .contact_title_container {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .contact_hero_title {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .contact_hero_underline {
+    background-color: #e70000;
+  }
+
+  .contact_hero_underline {
+    width: 15rem;
+    height: 4px;
+  }
+
+  /* ========================= */
+  main {
+    margin-top: 10vw;
+  }
+
+  /* ========================= */
+
+  .contact_section_title{
+    margin: 1rem 0;
+  }
+
+
+  /* ========================= */
+
+  .branch-details {
+    margin: 10rem 0;
+  }
+
+  .branch-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .branch-details-title-wrapper{
+    width: 100%;
+  }
+
+  /* ========================= */
+
+  .contact_pg_prefooter_contacts > .preFooter_line1{
+    flex-wrap: wrap;
+  }
+}
+
+/* SMALL SMARTPHONES (LEGACY CSS) */
+@media (max-width: 380px) {
+  .preFooter_overlay {
+    height: calc(100% + 40vh);
+  }
+
+  .location_map_wrapper {
+    height: 30vh;
+  }
+}

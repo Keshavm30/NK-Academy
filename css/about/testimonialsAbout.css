@@ -1,0 +1,127 @@
+/* ========== CUSTOM CAROUSEL CSS ========== */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testimonials_right .owl-nav {
+  display: none;
+}
+
+.testimonials_wrapper {
+  width: 100%;
+}
+
+/* .testimonials_right, */
+.testimonials_left {
+  width: 45%;
+}
+
+.testimonials_right {
+  width: 34%;
+}
+
+.carousel_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.testimonialVideoCard {
+  width: 45vw;
+  height: 290px;
+  position: relative;
+  display: flex;
+}
+
+.testimonialTextCard {
+  height: 24.4vh;
+  /* width: 45vw; */
+  width: 34vw;
+  position: relative;
+  display: flex;
+}
+
+.card_image {
+  width: 100%;
+}
+
+.card_image > iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card_info {
+  color: #0000006e;
+}
+
+.card_info strong {
+  font-weight: 600;
+  color: #000000;
+}
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+@media (min-width: 992px) {
+  .about_students_testimonials {
+    margin: 5rem 0;
+  }
+
+  .testimonialVideoCard {
+    height: 326px;
+  }
+}
+
+/* 
+
+  MOBILES AND TABLETS
+  
+*/
+@media (max-width: 991px) {
+  .about_students_testimonials {
+    margin: 5rem 0;
+  }
+
+  .testimonials_wrapper {
+    width: 90vw;
+  }
+
+  .testimonials_right,
+  .testimonials_left {
+    width: 100%;
+  }
+
+  .carousel_wrapper {
+    height: fit-content;
+  }
+
+  .testimonialVideoCard,
+  .testimonialTextCard {
+    width: 90vw;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .testimonialTextCard {
+    width: 90vw;
+    height: 125px;
+    position: relative;
+    display: flex;
+  }
+
+  .card_image {
+    width: 100%;
+    height: 65vw;
+  }
+
+  /* ============================ */
+
+  .about_founders_intro > h3 {
+    margin: 1rem 0;
+  }
+}

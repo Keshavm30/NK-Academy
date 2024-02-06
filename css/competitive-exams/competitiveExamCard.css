@@ -1,0 +1,126 @@
+.examCardContents {
+  display: flex;
+  flex-direction: row;
+}
+
+.examCardContents hr {
+  color: black;
+}
+
+.examTitle {
+  text-align: center;
+}
+
+/* LAPTOPS AND DESKTOPS */
+@media (min-width: 992px) {
+  .compExamCards_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .competitiveExamCard {
+    width: 90vw;
+    margin: 2rem 0;
+  }
+
+  .examTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .examCardContents {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .exam_overview_section,
+  .exam_specifics_section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .exam_tagline {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .exam_specifics_section {
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .exam_image {
+    width: 15rem;
+  }
+
+  .exam_preparingFor h5 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+  }
+
+  .exam_preparingFor ul li {
+    list-style: decimal;
+  }
+}
+
+/* MOBILES AND TABLETS */
+@media (max-width: 991px) {
+  .compExamCards_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .competitiveExamCard {
+    width: 90vw;
+    margin: 1rem 0;
+  }
+
+  .examTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .examCardContents {
+    flex-direction: column;
+  }
+
+  .exam_overview_section,
+  .exam_specifics_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .exam_tagline {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .exam_specifics_section {
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .exam_image {
+    width: 50vw;
+  }
+
+  .exam_preparingFor ul {
+    margin-left: 1rem;
+  }
+
+  .exam_preparingFor ul li {
+    list-style: decimal;
+  }
+}

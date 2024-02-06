@@ -1,0 +1,28 @@
+.contact_title_container {
+  background-image: url(../../editable-media/backgrounds/competitive-exams-hero.jpeg) !important;
+}
+/* LAPTOPS AND DESKTOPS */
+@media (min-width: 992px) {
+  .contact_preFooter_section {
+    margin-top: 20vh !important;
+  }
+
+  .about_us_title{
+    padding-top: 5rem;
+  }
+
+  .about_us_title h2 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* MOBILES AND TABLETS */
+@media (max-width: 991px) {
+  .contact_preFooter_section {
+    margin-top: 15vh !important;
+  }
+
+  .about_us_title{
+    padding-top: 5rem;
+  }
+}

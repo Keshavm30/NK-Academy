@@ -1,0 +1,64 @@
+.contact_branch_card {
+  transition: box-shadow 0.5s ease;
+}
+
+.contact_branch_card:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  cursor: pointer;
+}
+
+.contact_branch_card > h3 {
+  font-size: 1.6rem;
+}
+
+.contact_branch_card > p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.contact_card_addr_link > img {
+  width: 1.5rem;
+  margin-left: -5px;
+}
+
+@media (min-width: 992px) {
+  /* ========================= */
+  .branch-details {
+    margin: 10rem 0;
+  }
+
+  .branch-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .branch-details-title-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  /* ========================= */
+
+  .branch-details {
+    margin: 10rem 0;
+  }
+  .branch-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .branch-details-title-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,88 @@
+ To-Do:
+
+ - Add real reviews
+    - About page ✅
+    - CBSE ✅
+    - ICSE ✅
+    - SSC ✅
+    - Science ✅
+    - Commerce ✅
+
+- Add photos to festivals gallery (Events) ✅
+
+- Redesign the Test-Links page category section ✅
+
+- Add google forms pdfs in the Test-Links page ✅
+
+- Add posters to mid-section carousel in CBSE page ✅
+
+- Add banenrs to home page hero slider ✅
+
+- Add celebration videos to success page carousel ✅
+
+- Optimise and add images to Events page different sections
+    - Picnics ✅
+    - APL ✅
+    - Farewell Celebrations ✅
+    - Birthdays ✅
+    - Festivals ✅
+
+- Update Events page, Test links page and Home page OG images ✅
+
+
+
+
+
+
+Pages:
+
+Home
+About
+Success
+Courses
+    - CBSE
+    - ICSE
+    - SSC
+    - Science
+    - Commerce
+Competitive-Exams
+    - UPSC
+    - MPSC
+    - Bank Exams
+    - Staff Selection Commission
+Events
+Contact
+Test-Links
+Terms-and-Conditions
+
+
+
+
+
+Things to change (Content-Wise):
+
+
+- Ask for real faculty details (faculty name, professor of ..., stream, ID square photo) for About page
+
+- Add real text testimonials to "What Students Say" section on course pages
+    - SSC
+    - ICSE
+    - CBSE
+    - Science
+    - Commerce
+
+- Ask NK team for Success page content 
+
+- Change students images in Toppers carousel on Course pages
+    - SSC
+    - ICSE
+    - CBSE
+    - Science
+    - Commerce
+
+- Events photos for different tabs (picnics, birthdays, ...)
+
+- Update the OG image in head tag once real content is applied
+    Home
+
+- Make all text non-selectable

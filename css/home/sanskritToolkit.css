@@ -1,0 +1,123 @@
+.sanskrit_toolkit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gold;
+}
+
+@media (min-width: 992px) {
+  .sanskrit_toolkit {
+    margin: 10vh 0;
+    padding: 2rem 0;
+
+    gap: 5rem;
+    flex-direction: row;
+  }
+
+  .sanskritToolkit_img {
+    height: 25rem;
+    /* width: 25vw; */
+    max-width: 17rem;
+  }
+
+  .sanskrit_toolkit_content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 0;
+  }
+
+  .sanskrit_toolkit_catchline {
+    line-height: 1;
+    width: fit-content;
+    font-weight: 600;
+  }
+
+  .sanskrit_toolkit_catchline_word1,
+  .sanskrit_toolkit_catchline_word3 {
+    font-size: 4rem;
+  }
+
+  .sanskrit_toolkit_catchline_word2 {
+    font-size: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sanskrit_toolkit_content p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .sanskrit_toolkit_content a {
+    margin-top: 1rem;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .sanskrit_toolkit_content a:hover {
+    background-color: #1655ca;
+  }
+}
+
+@media (max-width: 991px) {
+  .sanskrit_toolkit {
+    gap: 1rem;
+    flex-direction: column-reverse;
+
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+
+  .sanskritToolkit_img {
+    height: 20rem;
+  }
+
+  .sanskrit_toolkit_content {
+    width: 90vw;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sanskrit_toolkit_catchline {
+    text-align: center;
+    line-height: 1;
+    width: fit-content;
+  }
+
+  .sanskrit_toolkit_catchline_word1,
+  .sanskrit_toolkit_catchline_word3 {
+    font-size: 13vw;
+    font-weight: 600;
+  }
+
+  .sanskrit_toolkit_catchline_word2 {
+    font-size: 12vw;
+    font-weight: 600;
+  }
+
+  .sanskrit_toolkit_content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .sanskrit_toolkit_content a {
+    font-size: 1.2rem;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  .sanskrit_toolkit_content a:hover {
+    background-color: #1646a1;
+  }
+}

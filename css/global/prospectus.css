@@ -1,0 +1,108 @@
+.prospectus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gold;
+}
+
+@media (min-width: 992px) {
+  .prospectus_img {
+    width: 30vw;
+  }
+
+  .prospectus_content {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .prospectus {
+    padding-top: 1rem;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  .prospectus_catchline {
+    line-height: 1;
+    width: fit-content;
+  }
+
+  .catchline_word1,
+  .catchline_word3 {
+    font-size: 3.8rem;
+  }
+
+  .catchline_word2 {
+    font-size: 5rem;
+  }
+
+  .prospectus_content p {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .prospectus_content a {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  .prospectus_content a:hover {
+    background-color: #1646a1;
+  }
+}
+
+@media (max-width: 991px) {
+  .prospectus {
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .prospectus_img {
+    width: 75vw;
+  }
+
+  .prospectus_content {
+    width: 90vw;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .prospectus_catchline {
+    text-align: center;
+    line-height: 1;
+    width: fit-content;
+  }
+
+  .catchline_word1,
+  .catchline_word3 {
+    font-size: 12vw;
+    font-weight: 600;
+  }
+
+  .catchline_word2 {
+    font-size: 16.5vw;
+    font-weight: 600;
+  }
+
+  .prospectus_content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .prospectus_content a {
+    font-size: 1.2rem;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  .prospectus_content a:hover {
+    background-color: #1646a1;
+  }
+}

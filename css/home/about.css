@@ -1,0 +1,69 @@
+.about_links a {
+  color: white;
+}
+
+.about_links a:hover {
+  opacity: 0.6;
+}
+
+.about {
+  background-color: #d7d7d75c;
+}
+
+/* 
+
+LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  .about {
+    height: 60vh;
+    padding: 12rem 0;
+  }
+  .about_container {
+    width: 90vw;
+  }
+  .about_link {
+    font-weight: 300;
+    background-color: #0f367d;
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
+  }
+}
+
+/* 
+
+  MOBILES AND TABLETS
+
+*/
+
+@media (max-width: 991px) {
+  .about {
+    height: 60rem;
+  }
+  .about_container {
+    width: 90vw;
+  }
+
+  .about_container h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .about_container > p {
+    line-height: 1.5;
+  }
+  .about_link {
+    width: 15rem;
+    font-weight: 400;
+    background-color: #0f367d;
+    border-radius: 50px;
+    padding: 0.7rem 3.5rem;
+    text-align: center;
+    margin: auto;
+  }
+  .about_link:hover {
+    background-color: #1655ca;
+  }
+  /* ================================ */
+}

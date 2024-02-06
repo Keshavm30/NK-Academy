@@ -1,0 +1,38 @@
+.blur-load::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+}
+
+.blur-load.loaded::before {
+  content: normal;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.blur-load {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.blur-load > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.blur-load.loaded > img {
+  opacity: 1;
+}

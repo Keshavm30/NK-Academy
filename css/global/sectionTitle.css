@@ -1,0 +1,54 @@
+.section_title > h2 {
+  color: #0f367d;
+}
+
+/* 
+
+LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  .section_title_divider1,
+  .section_title_divider2 {
+    width: 20vw;
+    height: 2px;
+    background-color: red;
+  }
+
+  .section_title > h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+/* 
+MOBILES AND TABLETS
+*/
+
+@media (max-width: 991px) {
+  .section_title {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .section_title_divider1,
+  .section_title_divider2 {
+    width: 10vw;
+    height: 2px;
+    background-color: red;
+    width: 20%;
+  }
+
+  .section_title > h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: 70vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}

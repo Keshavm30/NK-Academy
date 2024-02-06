@@ -1,0 +1,213 @@
+.branch_overview {
+  /* margin: 15rem 0; */
+
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branchOverviewCards_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  gap: 2rem;
+}
+
+.branchOverviewCard {
+  background-color: rgba(0, 0, 0, 0.101);
+}
+
+/* LAPTOPS AND DESKTOPS */
+@media (min-width: 992px) {
+  .branchOverviewCard {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+
+    border-radius: 0.35rem;
+  }
+
+  .overviewCardImages {
+    width: 50%;
+  }
+
+  .overviewCardInfo {
+    width: 50%;
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .overviewCardImages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .overviewCardImage1,
+  .overviewCardImage2,
+  .overviewCardImage3,
+  .overviewCardImage4 {
+    overflow: hidden;
+  }
+
+  .overviewCardImage1:hover,
+  .overviewCardImage2:hover,
+  .overviewCardImage3:hover,
+  .overviewCardImage4:hover {
+    cursor: pointer;
+  }
+
+  .overviewCardImage1 img,
+  .overviewCardImage2 img,
+  .overviewCardImage3 img,
+  .overviewCardImage4 img {
+    border-radius: 0.25rem;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .overviewCardImage1:hover img,
+  .overviewCardImage2:hover img,
+  .overviewCardImage3:hover img,
+  .overviewCardImage4:hover img {
+    transform: scale(1.1);
+  }
+
+  .overviewCardImage1 {
+    width: 98.5%;
+    height: 20rem;
+  }
+
+  .row2OverviewImages {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+  }
+
+  .overviewCardImage2,
+  .overviewCardImage3,
+  .overviewCardImage4 {
+    width: 32%;
+  }
+
+  .branchAddress,
+  .branchAreasServed,
+  .branchWorkingHours,
+  .branchPhoneNum {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .ovrvw_info_heading {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+/* MOBILES AND TABLETS */
+@media (max-width: 991px) {
+  .branchOverviewCard {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    border-radius: 0.35rem;
+  }
+
+  .overviewCardImages {
+    width: 100%;
+  }
+
+  .overviewCardInfo {
+    width: 100%;
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .overviewCardImages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .overviewCardImage1,
+  .overviewCardImage2,
+  .overviewCardImage3,
+  .overviewCardImage4 {
+    overflow: hidden;
+  }
+
+  .overviewCardImage1:hover,
+  .overviewCardImage2:hover,
+  .overviewCardImage3:hover,
+  .overviewCardImage4:hover {
+    cursor: pointer;
+  }
+
+  .overviewCardImage1 img,
+  .overviewCardImage2 img,
+  .overviewCardImage3 img,
+  .overviewCardImage4 img {
+    border-radius: 0.25rem;
+    transition: 0.5s all ease-in-out;
+  }
+
+  /* .overviewCardImage1:hover img ,
+    .overviewCardImage2:hover img ,
+    .overviewCardImage3:hover img ,
+    .overviewCardImage4:hover img {
+        transform: scale(1.25);
+    } */
+
+  .overviewCardImage1 {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .row2OverviewImages {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+  }
+
+  .overviewCardImage2,
+  .overviewCardImage3,
+  .overviewCardImage4 {
+    width: 32%;
+  }
+
+  .branchAddress,
+  .branchAreasServed,
+  .branchWorkingHours {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .branchPhoneNum {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .ovrvw_info_heading {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}

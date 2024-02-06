@@ -1,0 +1,111 @@
+.post_hero_course {
+  color: white;
+}
+
+.preFooter_contacts,
+.post_hero_banner {
+  background-color: #E3000D;
+  color: white;
+}
+
+.preFooter_divider {
+  background-color: yellow;
+}
+
+hr,
+.footer_copy,
+.preFooter_contacts a {
+  color: white;
+}
+
+.preFooter_contact > a:hover{
+  opacity: 0.5;
+}
+
+/* 
+
+  MOBILES AND TABLETS
+
+*/
+
+@media (max-width: 991px) {
+  .post_hero_banner {
+    padding: 0 1rem;
+    margin: 6vh 0 0 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .preFooter_contacts {
+    padding: 0 1rem;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .preFooter_divider {
+    height: 40px;
+    width: 2px;
+    margin: 0 0.3rem;
+  }
+
+  .preFooter_contact {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .preFooter_course{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .preFooter_number {
+    font-size: 1rem;
+  }
+
+  .preFooter_line1 .preFooter_contact {
+    width: 30%;
+  }
+
+  .preFooter_line2 .preFooter_contact {
+    width: 50%;
+  }
+}
+
+/* 
+
+  LAPTOPS AND DESKTOPS
+
+*/
+
+@media (min-width: 992px) {
+  .post_hero_banner {
+    margin-top: 5vh;
+    gap: 5rem;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .post_hero_course {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .preFooter_contacts {
+    gap: 5rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .preFooter_divider {
+    height: 40px;
+    width: 2px;
+  }
+
+  .preFooter_contact {
+    align-items: center;
+  }
+}

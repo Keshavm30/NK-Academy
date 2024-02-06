@@ -1,0 +1,13 @@
+Only upload photos in .jpeg format
+
+Must number photos between the range of number of each gallery eg. 1.jpeg, 2.jpeg...
+Kindly NOTE:
+Picnics photos (1 to 99)
+Academy Premier League photos (101 to 199)
+Farewell Celebration photos (201 to 299)
+Birthday photos (301 to 399)
+Festivals photos (401 to 499)
+
+
+Every section can only hold a maximum of hundred photos.
+Eg. picnics gallery (photos 1-99), festivals gallery (401-499)
